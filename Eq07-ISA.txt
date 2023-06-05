@@ -1,0 +1,72 @@
+Equipe 07 - RISC V
+
+Membros:
+Gustavo Henrique dos Santos Schaefer - RA: 2137402
+Leonardo Braga Cristo - RA: 1561111
+
+Documentação da codificação das intruções implementadas (16 bits)
+
+--------------------------------------------------------------------------
+
+Opcodes (em 16 bits):
+
+nop: 0000
+jump: 0001
+
+addi: 0011
+subi: 0100
+
+add: 0111 
+div: 1110
+
+--------------------------------------------------------------------------
+
+Formato das instruções:
+
+nop: 
+	bits 15-12: 0000,
+	bits 11-0: 000000000000
+
+jump:
+	bits 15-12: 0001,
+	bits 12-0: endereço da próxima instrução
+
+addi:
+	bits 15-12: 0011,
+	bits 11-9: Rd,
+	bits 8-6: Ro,
+	bits 5-0: imm
+
+subi:
+	bits 15-12: 0100,
+	bits 11-9: Rd,
+	bits 8-6: Ro,
+	bits 5-0: imm
+
+add:
+	bits 15-12: 0111,
+	bits 11-9: Rd,
+	bits 8-6: Ro1,
+	bits 5-3: R02,
+	bits 2-0: 000
+
+div
+	bits 15-12: 1110,
+	bits 11-9: Rd,
+	bits 8-6: Ro,
+	bits 5-0: imm
+
+--------------------------------------------------------------------------
+
+Programa na ROM (instruções):
+
+R8 => R4, R9 => R5, R10 => R6, R11 => R7
+
+1. addi R4, x0, 4  => Carrega R4 (o registrador 8) com o valor 4
+2. addi R5, x0, 6  => Carrega R5 com 6
+3. add R6, R4, R5  => Soma R4 com R5 e guarda em R6
+4. addi R6, R6, -2 => Subtrai 2 de R6
+5. jal x0, 15      => Salta para o endereço 15
+6. add R4, x0, R6  => No endereço 15, copia R6 para R4
+7. div R7, R6, 3   => No endereço 16, calcula a divisão de R6 por 3 e guarda em R7
+8. jal x0, 3       => Salta para a terceira instrução desta lista (R6 ← R4+R5)

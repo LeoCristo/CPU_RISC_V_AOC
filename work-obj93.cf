@@ -1,0 +1,31 @@
+v 4
+file . "Eq07-ROM_PC_UC_tb.vhd" "e6a8f65670ea334ca756bc1955865da369f46263" "20230531140302.765":
+  entity rom_pc_uc_tb at 4( 69) + 0 on 29;
+  architecture a_rom_pc_uc_tb of rom_pc_uc_tb at 11( 182) + 0 on 30;
+file . "Eq07-ULARegs.vhd" "3e8e10e88d40332f8b7e6f238bcefb1caf8a8f37" "20230531140302.749":
+  entity ularegs at 4( 69) + 0 on 25;
+  architecture a_ularegs of ularegs at 19( 461) + 0 on 26;
+file . "Eq07-ROM_PC_UC.vhd" "e19cb26dbf5c8bad4dacd23325e994a6e5c6f40c" "20230531140302.736":
+  entity rom_pc_uc at 4( 69) + 0 on 21;
+  architecture a_rom_pc_uc of rom_pc_uc at 17( 351) + 0 on 22;
+file . "Eq07-maq_estados.vhd" "58bdd1ff67f2812b91d797be0d3773db29d56f3f" "20230531140302.719":
+  entity stmach at 4( 69) + 0 on 17;
+  architecture a_stmach of stmach at 16( 311) + 0 on 18;
+file . "Eq07-reg16bits.vhd" "f0b5fc337997b97025c227298af6db3104edcd19" "20230531140302.708":
+  entity reg16bits at 4( 69) + 0 on 13;
+  architecture a_reg16bits of reg16bits at 16( 369) + 0 on 14;
+file . "Eq07-rom.vhd" "aaffb62d9a6439fc66cea2754164c32b312f4207" "20230531140302.703":
+  entity rom at 4( 69) + 0 on 11;
+  architecture a_rom of rom at 16( 373) + 0 on 12;
+file . "Eq07-program_counter.vhd" "07e5465982212323df10c98423c5b8c8bcaceafb" "20230531140302.713":
+  entity pc at 4( 69) + 0 on 15;
+  architecture a_pc of pc at 18( 431) + 0 on 16;
+file . "Eq07-unity_control.vhd" "bafee84a660d2d023097a2246383cf484c4b440a" "20230531140302.730":
+  entity uc at 4( 69) + 0 on 19;
+  architecture a_uc of uc at 22( 563) + 0 on 20;
+file . "Eq07-ULA.vhd" "4d523ff2ff27d29da02af1839a143de986ec17e6" "20230531140302.741":
+  entity ula_e at 4( 69) + 0 on 23;
+  architecture a_ula_e of ula_e at 17( 379) + 0 on 24;
+file . "Eq07-RegFile.vhd" "8e58c8a149d1fb2e7900f075126d18eb3004e37a" "20230531140302.757":
+  entity regfile at 4( 69) + 0 on 27;
+  architecture a_regfile of regfile at 17( 403) + 0 on 28;
