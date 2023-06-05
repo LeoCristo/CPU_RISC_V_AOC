@@ -39,7 +39,7 @@ Desenvolvimento em vhdl de uma cpu baseada no processador RISC V
     <li>[Gustavo Schaefer]</li>
   </ul>
 
-  <h3>Licença</h3>
+ 
   
 </body>
 </html>
