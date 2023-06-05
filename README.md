@@ -35,8 +35,8 @@ Desenvolvimento em vhdl de uma cpu baseada no processador RISC V
   
   <h3>Autores</h3>
   <ul>
-    <li>[Leonardo Braga] </li>
-    <li>[Gustavo Schaefer]</li>
+    <li>Leonardo Braga </li>
+    <li>Gustavo Schaefer</li>
   </ul>
 
  
